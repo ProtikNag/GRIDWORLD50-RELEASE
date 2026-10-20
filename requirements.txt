@@ -1,0 +1,9 @@
+# Runtime: the env, the config loader and the reference solvers.
+numpy>=1.24
+torch>=2.0
+gymnasium>=0.29
+pyyaml>=6.0
+
+# Only needed to rebuild figures/ (python figures/make_figures.py).
+plotly>=5.24
+kaleido>=0.2.1

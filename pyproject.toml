@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gridworld50"
+version = "2.0.0"
+description = "GridWorld-50: fifty verified maze-navigation tasks for continual RL"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.0",
+    "gymnasium>=0.29",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+figures = ["plotly>=5.24", "kaleido>=0.2.1"]
+
+[tool.setuptools]
+packages = ["gridworld50"]
